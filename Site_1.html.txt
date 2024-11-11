@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница библиотеки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в нашу библиотеку!</h1>
+</header>
+
+<nav>
+    <a href="#about">О библиотеке</a>
+    <a href="#services">Услуги</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<article id="about">
+    <h2>О библиотеке</h2>
+    <p>Наша библиотека предоставляет доступ к широкому выбору книг, журналов и электронных ресурсов. Мы стремимся создать комфортную и вдохновляющую атмосферу для чтения и обучения. В библиотеке проводятся различные мероприятия, такие как лекции, мастер-классы и выставки, которые помогают развивать интерес к чтению и культуре.</p>
+</article>
+
+<article id="services">
+    <h2>Услуги библиотеки</h2>
+    <p>Мы предлагаем следующие услуги:</p>
+    <ul>
+        <li>Бесплатный доступ к книгам и журналам.</li>
+        <li>Электронные ресурсы и базы данных.</li>
+        <li>Читальные залы и рабочие места.</li>
+        <li>Организация мероприятий и курсов.</li>
+    </ul>
+</article>
+
+<footer id="contact">
+    <h2>Контакты</h2>
+    <p>Адрес: ул. Чтения, 1, Город, Страна</p>
+    <p>Email: info@library-example.ru</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+    <p>&copy; 2023 Библиотека</p>
+</footer>
+
+</body>
+</html>
