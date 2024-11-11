@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+        }
+		.container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+		.contact-form {
+            margin-left: 20px; /* Можно настроить на большее значение для большего смещения */
+        }
+		article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4CAF50;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<header>
+    <h1>Книжная библиотека</h1>
+    <nav>
+        <a href="#about">О библиотеке</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#services">Услуги</a>
+        <a href="#events">Мероприятия</a>
+        <a href="#contact">Контакты</a>
+		<a href="#contact">Обратная связь</a>
+    </nav>
+</header>
+<form action="/submit_feedback" method="post" class="contact-form">
+  <label for="name">Имя:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Электронная почта:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="subject">Тема:</label><br>
+  <input type="text" id="subject" name="subject" required><br><br>
+
+  <label for="message">Сообщение:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+  <input type="submit" value="Отправить">
+</form>
+<div class="container">
+    <article>
+        <h2>Контактная информация</h2>
+        <p>Если у вас есть срочные вопросы или вы предпочитаете другие способы связи, пожалуйста, воспользуйтесь следующей контактной информацией:</p>
+		<p>Телефон: +7 (495) 123-45-67</p>
+		<p>Электронная почта: info@biblioteka-example.ru</p>
+		<p>Адрес: ул. Примерная, д. 10, Москва, Россия</p>
+		<p>Часы работы: Понедельник - Пятница: 9:00 - 18:00, Суббота - Воскресенье: 10:00 - 16:00</p>
+    </article>
+</div>
+
+</body>
+</html>
+
+<footer>
+    <p>&copy; 2024 Книжная библиотека. Все права защищены.</p>
+</footer>
