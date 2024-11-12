@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обращение граждан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Обращение граждан</h1>
+<form id="appealForm">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Ваше обращение:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Отправить обращение</button>
+</form>
+
+<script>
+    document.getElementById('appealForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Здесь можно добавить код для отправки данных на сервер
+        console.log('Обращение отправлено:', { name, email, message });
+
+        alert('Ваше обращение отправлено! Спасибо!');
+        this.reset(); // Сброс формы
+    });
+</script>
+
+</body>
+</html>
