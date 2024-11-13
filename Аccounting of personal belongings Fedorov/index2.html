@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет вещевого имущества воинской части 47062</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Информационная система учета воинской части 47062</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="login.html">Вход в программу</a>
+</nav>
+
+<div class="container">
+    <div id="main-page" class="form-container">
+        <h2>Добро пожаловать!</h2>
+        <p>Для доступа ко всем функциям системы, пожалуйста, авторизуйтесь.</p>
+    </div>
+</div>
+
+<!-- Login Page -->
+<div class="container" style="display: none;" id="login-page">
+    <div class="form-container">
+        <h2>Авторизация</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Simple script to toggle between pages
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').replace('.html', '-page');
+            document.querySelectorAll('.container').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(targetId).style.display = 'block';
+        });
+    });
+
+    // Initially show the main page
+    document.getElementById('main-page').style.display = 'block';
+</script>
+
+</body>
+</html>
