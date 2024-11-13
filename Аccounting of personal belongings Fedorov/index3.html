@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационная система учета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+        .welcome-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Выдача имущества войсковой части 47062</h1>
+</header>
+
+<nav>
+    <a href="#" id="home-link">Главная</a>
+    <a href="#" id="storage-link">Склад МО</a>
+    <a href="#" id="issue-link">Выдача вещевого имущества</a>
+    <a href="#" id="user-role-link">Пользователь</a>
+    <a href="#" id="login-link">Вход в программу</a>
+</nav>
+
+<div class="container">
+    <div id="main-page" class="form-container">
+        <h2>Добро пожаловать!</h2>
+        <p class="welcome-text">Для доступа ко всем функциям системы, пожалуйста, авторизуйтесь.</p>
+    </div>
+</div>
+
+<!-- Login Page -->
+<div class="container" style="display: none;" id="login-page">
+    <div class="form-container">
+        <h2>Авторизация</h2>
+        <form id="login-form">
+            <input type="text" id="username" name="username" placeholder="Логин" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Simple script to toggle between pages
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const id = this.id.replace('-link', '-page');
+            document.querySelectorAll('.container').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        });
+    });
+
+    // Show the main page by default
+    document.getElementById('main-page').style.display = 'block';
+
+    // Handle login form submission
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if ((username === 'admin' && password === 'admin') || (username === 'user' && password === 'user')) {
+            alert('Успешная авторизация!');
+            document.getElementById('login-page').style.display = 'none';
+            document.getElementById('main-page').style.display = 'block';
+            document.getElementById('user-role-link').textContent = username === 'admin' ? 'Администратор' : 'Пользователь';
+        } else {
+            alert('Неверный логин или пароль!');
+        }
+    });
+</script>
+
+</body>
+</html>
