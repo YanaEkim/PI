@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет вещевого имущества</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Форма учета вещевого имущества</h1>
+
+<form action="/submit" method="POST">
+    <label for="itemName">Наименование имущества:</label>
+    <input type="text" id="itemName" name="itemName" required>
+
+    <label for="itemType">Тип имущества:</label>
+    <select id="itemType" name="itemType" required>
+        <option value="одежда">Одежда</option>
+        <option value="обувь">Обувь</option>
+        <option value="снаряжение">Снаряжение</option>
+        <option value="другое">Другое</option>
+    </select>
+
+    <label for="quantity">Количество:</label>
+    <input type="number" id="quantity" name="quantity" required min="1">
+
+    <label for="dateReceived">Дата поступления:</label>
+    <input type="date" id="dateReceived" name="dateReceived" required>
+
+    <label for="condition">Состояние:</label>
+    <select id="condition" name="condition" required>
+        <option value="новое">Новое</option>
+        <option value="хорошее">Хорошее</option>
+        <option value="удовлетворительное">Удовлетворительное</option>
+        <option value="плохое">Плохое</option>
+    </select>
+
+    <label for="responsiblePerson">Ответственное лицо:</label>
+    <input type="text" id="responsiblePerson" name="responsiblePerson" required>
+
+    <button type="submit">Отправить данные</button>
+</form>
+
+</body>
+</html>
